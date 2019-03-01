@@ -1,0 +1,68 @@
+
+/*Set variables for the main site colours*/
+/*$color-dark: #4c61a5;*/
+$color-dark: #4c61a5;
+$color-bright: #d8b91f;
+$color-med: #C0C0C0;
+$color-white: #fff;
+$color-black: #000;
+$show-panel: true;
+
+@font-face {
+    font-family: happy_Monkey;
+    src: url(../fonts/HappyMonkey-Regular.ttf);
+}
+
+//media query mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaMd {
+    @media screen and (min-width: 665px) {
+      @content;
+    }
+  }
+
+@mixin mediaLg {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+
+@mixin panel-control {
+    @if $show-panel {
+        .panel.show {
+            opacity: 1;
+            max-height: 50%;
+            
+            ul {
+                padding: 14px;
+            }
+            
+            h3, h4 {
+                padding: 7px;
+                font-weight: bold;
+                color: $color-dark;
+            }
+            
+            p {
+                text-align: center;
+                color: $color-bright;
+            }
+        }
+    }
+}
+
+//Set text colour
+@function set-text-color($color) {
+    @if (lightness($color) > 48) {
+      @return #000;
+    }
+  
+    @else {
+      @return #fff;
+    }
+  }

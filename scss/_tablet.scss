@@ -1,0 +1,59 @@
+/*Tablet View*/
+
+@media (min-width: 768px) {
+    body {
+        max-width: 778px;
+
+        h1 {
+            font-size: 3.0em;
+        }
+    
+        h2 {
+            margin-bottom: 16px;
+            font-family: Calibri, Segoe, 'Trebuchet MS', Verdana, 'sans-serif';
+            /*font-family: happy_Monkey, arial, sans-serif;
+            font-style: italic;
+            font-weight: bold;*/
+        }
+    }
+
+    .style-nav ul {
+        text-align: center;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    .col {
+        float: left;
+        padding: 0px 7px 14px;
+    }
+
+    .col-md-one-third {
+        width: 33%;
+    }
+
+    
+    .col-md-one-half {
+        width: 50%;
+    }
+
+    .col-md-two-third {
+        width: 66%;
+    }
+
+    .nodisplay {
+        display: block;
+    }
+
+    .socialinfo {
+        padding: 8px 30px;
+        border-radius: 20px;
+        width: 33%;
+    }
+
+    #menuToggle {
+        top: 7px;
+    }
+}

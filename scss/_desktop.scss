@@ -1,0 +1,49 @@
+/*Desktop View*/
+@include mediaLg {
+
+    body {
+        max-width: 2400px;
+        p {
+            padding: 2vh 10vh;
+
+            &::first-letter {
+                font-weight: bold;
+                color: $color-bright;
+            }
+        }
+    }
+
+    .style-logo {
+        float: left;
+    }
+
+    .style-nav {
+        float: right;
+    }
+
+    .col-lg-one-fourth {
+        width: 25%;
+    }
+
+    .col-lg-one-third {
+        width: 33%;
+    }
+
+    .col-lg-two-third {
+        width: 66%;
+    }
+
+    .nodisplay {
+        display: block;
+    }
+
+    .socialinfo {
+        padding: 8px 30px;
+        border-radius: 20px;
+        width: 33%;
+    }
+
+    #menuToggle {
+        top: 7px;
+    }
+}

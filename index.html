@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A little bit of CSS knowledge" />
+    <meta name="keywords" content="css, transitions, keyframes" />
+    <meta name="author" content="John Robertson">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="revisit-after" content="3 month">
+    <!-- cooking, recipes, family -->
+    <title>About this page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<link rel="stylesheet" href="css/burger.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-73962366-2');
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="row  sticky-nav">
+            <div class="col">
+                <nav role="navigation" class="burger">
+                    <div id="menuToggle">
+                        <input type="checkbox" aria-label="sitemap open & close" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <a href="index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="skye.html">
+                                <li>Skye</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!--This is the accessibility project links and should be invisible-->
+        <div id="pagetop">
+            <a href="#maincontent" class="skip_link">Skip to Main Content</a>
+            <a href="#sitemap" class="skip_link">Site Map</a>
+        </div>
+    </header>
+
+    <main id="maincontent">
+        <div class="row">
+            <div class="col">
+                <div class="hero">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="info-box-clear">
+                    <h2>My CSS</h2>
+                    <h3>Click the buttons</h3>
+                    <p>A summary of SASS effects used in this website is listed below:</p>
+                    <ul>
+                        <li class="list-item">One main.css including a Parallax second page using partials</li>
+                        <li class="list-item">Panel button colours controlled by a SASS function(if & else)</li>
+                        <li class="list-item">Display width controlled by both css media and sass includes</li>
+                        <li class="list-item">Panels controlled by js & also sass includes</li>
+                        <li class="list-item">Config. file utilised through @import</li>
+                        <li class="list-item">One <strong>main.sass</strong> file of only</li>
+                        <li class="list-item">Seperate SASS partial files for ease of editing</li>
+                        <li class="list-item">Nesting completed on all parts of the site</li>
+                    </ul>
+                    </p>
+                    <p>The second page of this wesite is a parallax page that was created and then integrated with
+                        the other CSS using partials.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col col-md-one-half">
+                <div class="info-box-clear">
+                    <h2>Transitions</h2>
+                    <h4>Hover over the buttons</h4>
+                    <button class="moreinfo moreinfo-green" aria-label="open and close recipe"
+                        accesskey="r">Click</button>
+                    <div class="panel">
+                        <h4>This is controlled by a Mixin & If statement</h4>
+                        <div class="boxes">
+                            <div>
+                                <i class="far fa-envelope fa-2x"></i>
+                                <span class="text-secondary">Email:</span>
+                                <a class="text-secondary"
+                                    href="mailto:johnr@myjamjar.net?subject=Request%20for%20Web%20Developer%20Services">johnr@jamjar.net</a>
+                            </div>
+                            <div>
+                                <i class="fas fa-phone-volume fa-2x"></i>
+                                <span class="text-secondary">Phone:</span>
+                                <a class="text-secondary"">+61 8 9454 8376</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class=" col col-md-one-half">
+                                    <div class="info-box-clear">
+                                        <h2>CSS Grids</h2>
+                                        <h4>Hover over the grid squares</h4>
+                                        <button class="moreinfo moreinfo-green" aria-label="open and close recipe"
+                                            accesskey="r">Click</button>
+                                        <div class="panel">
+                                            <div class="grid-container">
+                                                <div class="grid-item"><img src="images/smile-regular.svg" alt=""></div>
+                                                <div class="grid-item"><img src="images/smile-regular.svg" alt=""></div>
+                                                <div class="grid-item"><img src="images/smile-regular.svg" alt=""></div>
+                                                <div class="grid-item"><img src="images/smile-regular.svg" alt=""></div>
+                                                <div class="grid-item"><img src="images/smile-regular.svg" alt=""></div>
+                                                <div class="grid-item"><img src="images/smile-regular.svg" alt=""></div>
+                                                <div class="grid-item"><img src="images/smile-regular.svg" alt=""></div>
+                                                <div class="grid-item"><img src="images/smile-regular.svg" alt=""></div>
+                                                <div class="grid-item"><img src="images/smile-regular.svg" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col col-md-one-half">
+                                <div class="info-box-clear">
+                                    <h2>Flexbox</h2>
+                                    <h4>Plus online CSS icons</h4>
+                                    <button class="moreinfo moreinfo-green" aria-label="open and close recipe"
+                                        accesskey="r">Click</button>
+                                    <div class="panel">
+                                        <p>This is controlled by a Mixin & If statement</p>
+                                        <div class="flex-container">
+                                            <div><i class="fas fa-apple-alt fa-2x"></i></div>
+                                            <div><i class="fas fa-apple-alt fa-2x"></i></div>
+                                            <div><i class="fas fa-apple-alt fa-2x"></i></div>
+                                            <div><i class="fas fa-apple-alt fa-2x"></i></div>
+                                            <div><i class="fas fa-apple-alt fa-2x"></i></div>
+                                            <div><i class="fas fa-apple-alt fa-2x"></i></div>
+                                            <div><i class="fas fa-apple-alt fa-2x"></i></div>
+                                            <div><i class="fas fa-apple-alt fa-2x"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-md-one-half">
+                                <div class="info-box-clear">
+                                    <h2>Shape Outside</h2>
+                                    <h4>Image shape change</h4>
+                                    <button class="moreinfo moreinfo-green" aria-label="open and close recipe"
+                                        accesskey="r">Click</button>
+                                    <div class="panel">
+                                        <img src="images/gitlogo.png" alt="" class="shaper">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col col-md-one-half">
+                                <div class="info-box-clear">
+                                    <h2>nth Child</h2>
+                                    <h4>Odds & Evens </h4>
+                                    <button class="moreinfo moreinfo-green" aria-label="open and close recipe"
+                                        accesskey="r">Click</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li class="secondchild"><i class="far fa-smile-beam"></i></li>
+                                            <li class="secondchild"><i class="far fa-smile-beam"></i></li>
+                                            <li class="secondchild"><i class="far fa-smile-beam"></i></li>
+                                            <li class="secondchild"><i class="far fa-smile-beam"></i></li>
+                                            <li class="secondchild"><i class="far fa-smile-beam"></i></li>
+                                            <li class="secondchild"><i class="far fa-smile-beam"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-md-one-half">
+                                <div class="info-box-clear">
+                                    <h2>Transform</h2>
+                                    <h4>Skew & scale</h4>
+                                    <button class="moreinfo moreinfo-green" aria-label="open and close recipe"
+                                        accesskey="r">Click</button>
+                                    <div class="panel">
+                                        <img src="images/android-brands.svg" alt="" class="fab">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class=" col col-md-one-half">
+                                <div class="info-box-clear">
+                                    <h2>Grids with @extend</h2>
+                                    <h4>Using @extend & placholders</h4>
+                                    <button class="moreinfo moreinfo-green" aria-label="open and close recipe"
+                                        accesskey="r">Click</button>
+                                    <div class="panel">
+                                        <div class="extend-container">
+                                            <div class="extend-item" placeholder="box-change"><img
+                                                    src="images/smile-regular.svg" alt=""><input type="text"
+                                                    name="fname" placeholder="Give us a name"></div>
+                                            <div class="extend-item"><img src="images/smile-regular.svg" alt=""><input
+                                                    type="text" name="fname" placeholder="Give us a name"></div>
+                                            <div class="extend-item"><img src="images/smile-regular.svg" alt=""><input
+                                                    type="text" name="fname" placeholder="Give us a name"></div>
+                                            <div class="extend-item" placeholder="box-change"><img
+                                                    src="images/smile-regular.svg" alt=""><input type="text"
+                                                    name="fname" placeholder="Give us a name"></div>
+                                            <div class="extend-item"><img src="images/smile-regular.svg" alt=""><input
+                                                    type="text" name="fname" placeholder="Give us a name"></div>
+                                            <div class="extend-item"><img src="images/smile-regular.svg" alt=""><input
+                                                    type="text" name="fname" placeholder="Give us a name"></div>
+                                            <div class="extend-item" placeholder="box-change"><img
+                                                    src="images/smile-regular.svg" alt=""><input type="text"
+                                                    name="fname" placeholder="Give us a name"></div>
+                                            <div class="extend-item"><img src="images/smile-regular.svg" alt=""><input
+                                                    type="text" name="fname" placeholder="Give us a name"></div>
+                                            <div class="extend-item"><img src="images/smile-regular.svg" alt=""><input
+                                                    type="text" name="fname" placeholder="Give us a name"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-md-one-half">
+                                <div class="info-box-clear">
+                                    <h2>@each</h2>
+                                    <h4>A loop to send you to sleep</h4>
+                                    <button class="moreinfo moreinfo-green" aria-label="open and close recipe"
+                                        accesskey="r">Click</button>
+                                    <div class="panel">
+                                        <ul>
+                                            <li id="eachitem-dad"></li>
+                                            <li id="eachitem-daughter"></li>
+                                            <li id="eachitem-son"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/cookies.js"></script>
+</body>
+
+</html>
