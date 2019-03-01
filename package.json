@@ -1,0 +1,28 @@
+{
+  "name": "dip_sasssite",
+  "version": "1.0.0",
+  "description": "Diploma test site",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robbozinoz/scss_test.git"
+  },
+  "keywords": [
+    "Test",
+    "the",
+    "SCSS",
+    "site"
+  ],
+  "author": "JOhn Robertson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Robbozinoz/scss_test/issues"
+  },
+  "homepage": "https://github.com/Robbozinoz/scss_test#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
